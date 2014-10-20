@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Lobster+Two:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #EB5959;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: 'Libre Baskerville', serif;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.cta {
+  padding: 50px 0;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+  padding: 30px;
+  font-size: 48px;
+}
+
+h2 {
+  line-height: 1.5em;
+  font-size: 22px;
+}
+
+img {
+  width: 200px;
+  padding: 10px;
+}
+
+.donate button {
+  padding: 15px;
+  font-size: 22px;
+  font-family: 'Libre Baskerville', serif;
+  color: #ffffff;
+  border: 1px solid #c53333;
+  border-radius: 4px;
+  background: #eb5959;
+  background: -moz-linear-gradient(top, #eb5959 0%, #c53333 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eb5959), color-stop(100%, #c53333));
+  background: -webkit-linear-gradient(top, #eb5959 0%, #c53333 100%);
+  background: -o-linear-gradient(top, #eb5959 0%, #c53333 100%);
+  background: -ms-linear-gradient(top, #eb5959 0%, #c53333 100%);
+  background: linear-gradient(to bottom, #eb5959 0%, #c53333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb5959', endColorstr='#c53333', GradientType=0);
+}

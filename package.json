@@ -1,0 +1,11 @@
+{
+  "name"         : "christmas",
+  "version"      : "0.0.0",
+  "description"  : "Christmas donations! Fuck cancer!",
+  "main"         : "server.js",
+  "author"       : "DevoNoel",
+  "dependencies" : {
+    "express"    : "latest",
+    "mongoose"   : "latest"
+  }
+}
