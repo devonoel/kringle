@@ -5,7 +5,10 @@
   "main"         : "server.js",
   "author"       : "DevoNoel",
   "dependencies" : {
-    "express"    : "latest",
-    "mongoose"   : "latest"
+    "express"         : "latest",
+    "mongoose"        : "latest",
+    "morgan"          : "latest",
+    "body-parser"     : "latest",
+    "method-override" : "latest"
   }
 }
