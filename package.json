@@ -9,6 +9,10 @@
     "mongoose"        : "latest",
     "morgan"          : "latest",
     "body-parser"     : "latest",
-    "method-override" : "latest"
+    "method-override" : "latest",
+    "nodemon"         : "latest"
+  },
+  "scripts"      : {
+    "start"           : "nodemon server.js"
   }
 }

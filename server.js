@@ -7,8 +7,6 @@ var bodyParser = require('body-parser'); 	        // pull information from HTML 
 var methodOverride = require('method-override');  // simulate DELETE and PUT
 
 // configuration ===========================================
-var port = process.env.PORT || 8080;
-
 var db = require('./config/db');
 mongoose.connect(db.url);
 
@@ -19,5 +17,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(methodOverride());
 
-app.listen(8080);
-console.log("App listening on port 8080");
+// routes ==================================================
+require('./app/routes.js')(app);
+
+// start server ============================================
+var port = process.env.PORT || 8080;
+app.listen(port);
+console.log("Magic happens on port " + port);
