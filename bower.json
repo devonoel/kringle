@@ -1,7 +1,8 @@
 {
-	"name": "christmas",
-	"version": "0.0.0",
-	"dependencies": {
-		"font-awesome": "latest"
+	"name"					: "christmas",
+	"version"				: "0.0.0",
+	"dependencies"	: {
+		"font-awesome"	: "latest",
+		"angular" 			: "latest"
 	}
 }

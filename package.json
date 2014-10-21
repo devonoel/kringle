@@ -10,7 +10,8 @@
     "morgan"          : "latest",
     "body-parser"     : "latest",
     "method-override" : "latest",
-    "nodemon"         : "latest"
+    "nodemon"         : "latest",
+    "bower"           : "latest"
   },
   "scripts"      : {
     "start"           : "nodemon server.js"
