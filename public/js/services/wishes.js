@@ -9,4 +9,4 @@ angular.module('wishService', [])
         return $http.post('/api/wishes', wishData);
       }
     }
-  };
+  });

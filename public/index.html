@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="christmas">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Christmas</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+
+    <script src="js/services/donations.js"></script>
+    <script src="js/services/wishes.js"></script>
+    <script src="js/controllers/donations.js"></script>
+    <script src="js/controllers/wishes.js"></script>
+    <script src="js/core.js"></script>
   </head>
 
   <body>
@@ -21,6 +30,11 @@
       <div class="donate">
         <button>Contribute</button>
       </div>
+      <form ng-controller="DonationsController">
+        <input type="text" ng-model="formData.amount">
+
+        <button type="submit" ng-click="createDonation()">Add</button>
+      </form>
     </div>
   </body>
 </html>

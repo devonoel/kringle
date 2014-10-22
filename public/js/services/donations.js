@@ -6,4 +6,4 @@ angular.module('donationService', [])
         return $http.post('/api/donations', donationData);
       }
     }
-  };
+  });
