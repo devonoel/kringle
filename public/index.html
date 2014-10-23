@@ -10,10 +10,8 @@
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/angular/angular.min.js"></script>
 
-    <script src="js/services/donations.js"></script>
-    <script src="js/services/wishes.js"></script>
-    <script src="js/controllers/donations.js"></script>
-    <script src="js/controllers/wishes.js"></script>
+    <script src="js/services/main.js"></script>
+    <script src="js/controllers/main.js"></script>
     <script src="js/core.js"></script>
   </head>
 
@@ -30,8 +28,9 @@
       <div class="donate">
         <button>Contribute</button>
       </div>
-      <form ng-controller="DonationsController">
+      <form ng-controller="MainCtrl">
         <input type="text" ng-model="formData.amount">
+        <input type="text" ng-model="formData.text">
 
         <button type="submit" ng-click="createDonation()">Add</button>
       </form>
