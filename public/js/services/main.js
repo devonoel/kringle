@@ -4,7 +4,6 @@ angular.module('mainService', [])
       var request = {
         "amount" : data
       };
-      console.log(request);
       return $http.post('/api/donations', request);
     }
 
