@@ -4,9 +4,13 @@ angular.module('mainController', [])
 
     $scope.createDonation = function() {
       if (!$.isEmptyObject($scope.formData)) {
-        MainSrvc.createDonation($scope.formData.amount);
-        MainSrvc.createWish($scope.formData.text);
-        $scope.formData = {}
+        MainSrvc.createDonation($scope.formData.amount)
+          .success(function() {
+            MainSrvc.createWish($scope.formData.text)
+              .success(function() {
+                $scope.formData = {};
+              });
+          });
       };
     };
 
