@@ -9,3 +9,10 @@ Let's make some Christmas donations!
 + Install frontend dependencies: ```bower install```
 + Start the server: ```npm start```
 + Go to ```localhost:8080``` in your browser
+
+## Testing
+
+Tests are written in Mocha+Chai.  To run all tests:
+```
+npm test
+```

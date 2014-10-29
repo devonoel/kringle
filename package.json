@@ -12,9 +12,11 @@
     "method-override" : "latest",
     "nodemon"         : "latest",
     "bower"           : "latest",
-    "stripe"          : "latest"
+    "stripe"          : "latest",
+    "mocha"           : "latest"
   },
   "scripts"      : {
-    "start"           : "nodemon server.js"
+    "start"           : "nodemon server.js",
+    "test"            : "mocha"
   }
 }
