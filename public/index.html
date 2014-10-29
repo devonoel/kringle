@@ -10,7 +10,7 @@
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/angular/angular.min.js"></script>
 
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
 
     <script src="js/services/main.js"></script>
     <script src="js/controllers/main.js"></script>
@@ -26,23 +26,16 @@
             battling cancer and their families by making a donation to the
             Northern Cancer Research Foundation.</h2>
       </div>
-      <div class="donate">
-        <button ng-click="toggleForm()">Contribute</button>
-      </div>
+      <form id="payment-form">
+        <input type="text" placeholder="Amount" ng-model="formData.amount">
+        <textarea placeholder="Leave a holiday wish if you'd like..."></textarea>
+        <button id="contribute-button" type="submit">Contribute</button>
+      </form>
       <form style="display:none;">
         <input type="text" ng-model="formData.amount">
         <input type="text" ng-model="formData.text">
 
         <button type="submit" ng-click="createDonation()">Add</button>
-      </form>
-
-      <form id="payment-form" ng-show="showForm">
-        <input type="text" placeholder="Amount">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Card number">
-        <input class="small" type="text" placeholder="MM/YY">
-        <input class="small" type="text" placeholder="CVC">
-        <button type="submit">Donate</button>
       </form>
     </div>
   </body>

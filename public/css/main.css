@@ -24,7 +24,7 @@ body {
 
 .container {
   position: relative;
-  width: 1000px;
+  width: 750px;
   margin: 70px auto;
   text-align: center;
 }
@@ -49,14 +49,51 @@ img {
   padding: 10px;
 }
 
-button {
+#payment-form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea, button {
+  box-sizing: border-box;
   outline: none;
   font-family: 'Libre Baskerville', serif;
+  width: 100%;
+  border-radius: 4px;
+}
+
+input {
+  font-size: 16px;
+  padding: 5px;
+  margin: 3px 0;
+  border: 2px solid #c53333;
+}
+
+input:focus {
+  border: 2px solid #ff9999;
+}
+
+textarea {
+  height: 100px;
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid #c53333;
+  margin: 3px 0;
+  resize: none;
+}
+
+textarea:focus {
+  border: 2px solid #ff9999;
+}
+
+button {
   color: #ffffff;
   border: 2px solid #ab1919;
-  border-radius: 4px;
   background-color: #c53333;
   cursor: pointer;
+  padding: 6px 0;
+  font-size: 20px;
+  margin: 15px 0;
 }
 
 button:hover {
@@ -65,42 +102,4 @@ button:hover {
 
 button:focus {
   border: 2px solid #ff9999;
-}
-
-.donate button {
-  padding: 15px;
-  font-size: 22px;
-}
-
-#payment-form {
-  width: 300px;
-  margin: 30px auto;
-}
-
-#payment-form input {
-  outline: none;
-  box-sizing: border-box;
-  width: 300px;
-  font-size: 16px;
-  font-family: 'Libre Baskerville', serif;
-  padding: 5px;
-  margin: 3px 0;
-  border: 2px solid #c53333 ;
-  border-radius: 4px;
-}
-
-#payment-form input:focus {
-  border-radius: 4px;
-  border: 2px solid #ff9999;
-}
-
-#payment-form input.small {
-  width: 147px;
-}
-
-#payment-form button {
-  width: 100%;
-  padding: 6px 0;
-  font-size: 16px;
-  margin: 15px 0;
 }
