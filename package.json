@@ -11,7 +11,8 @@
     "body-parser"     : "latest",
     "method-override" : "latest",
     "nodemon"         : "latest",
-    "bower"           : "latest"
+    "bower"           : "latest",
+    "stripe"          : "latest"
   },
   "scripts"      : {
     "start"           : "nodemon server.js"

@@ -25,7 +25,7 @@ body {
 .container {
   position: relative;
   width: 900px;
-  margin: 60px auto;
+  margin: 70px auto;
   text-align: center;
 }
 
@@ -49,19 +49,58 @@ img {
   padding: 10px;
 }
 
+button {
+  outline: none;
+  font-family: 'Libre Baskerville', serif;
+  color: #ffffff;
+  border: 2px solid #ab1919;
+  border-radius: 4px;
+  background-color: #c53333;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #de4c4c;
+}
+
+button:focus {
+  border: 2px solid #ff9999;
+}
+
 .donate button {
   padding: 15px;
   font-size: 22px;
+}
+
+#payment-form {
+  width: 300px;
+  margin: 30px auto;
+}
+
+#payment-form input {
+  outline: none;
+  box-sizing: border-box;
+  width: 300px;
+  font-size: 16px;
   font-family: 'Libre Baskerville', serif;
-  color: #ffffff;
-  border: 1px solid #c53333;
+  padding: 5px;
+  margin: 3px 0;
+  border: 2px solid #c53333 ;
   border-radius: 4px;
-  background: #eb5959;
-  background: -moz-linear-gradient(top, #eb5959 0%, #c53333 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eb5959), color-stop(100%, #c53333));
-  background: -webkit-linear-gradient(top, #eb5959 0%, #c53333 100%);
-  background: -o-linear-gradient(top, #eb5959 0%, #c53333 100%);
-  background: -ms-linear-gradient(top, #eb5959 0%, #c53333 100%);
-  background: linear-gradient(to bottom, #eb5959 0%, #c53333 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb5959', endColorstr='#c53333', GradientType=0);
+}
+
+#payment-form input:focus {
+  border-radius: 4px;
+  border: 2px solid #ff9999;
+}
+
+#payment-form input.small {
+  width: 147px;
+}
+
+#payment-form button {
+  width: 100%;
+  padding: 6px 0;
+  font-size: 16px;
+  margin: 15px 0;
 }

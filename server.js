@@ -17,6 +17,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(methodOverride());
 
+var stripe = require('stripe')(process.env.STRIPE_SECRET);
+
 // routes ==================================================
 require('./app/routes.js')(app);
 

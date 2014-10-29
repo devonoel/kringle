@@ -10,13 +10,15 @@
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/angular/angular.min.js"></script>
 
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
     <script src="js/services/main.js"></script>
     <script src="js/controllers/main.js"></script>
     <script src="js/core.js"></script>
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" ng-controller="MainCtrl">
       <img src="images/christmas.png" alt="Christmas Logo">
       <h1>Merry Christmas!</h1>
       <div class="cta">
@@ -26,13 +28,22 @@
           Research Foundation.</h2>
       </div>
       <div class="donate">
-        <button>Contribute</button>
+        <button ng-click="toggleForm()">Contribute</button>
       </div>
-      <form ng-controller="MainCtrl">
+      <form style="display:none;">
         <input type="text" ng-model="formData.amount">
         <input type="text" ng-model="formData.text">
 
         <button type="submit" ng-click="createDonation()">Add</button>
+      </form>
+
+      <form id="payment-form" ng-show="showForm">
+        <input type="text" placeholder="Amount">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Card number">
+        <input class="small" type="text" placeholder="MM/YY">
+        <input class="small" type="text" placeholder="CVC">
+        <button type="submit">Donate</button>
       </form>
     </div>
   </body>
