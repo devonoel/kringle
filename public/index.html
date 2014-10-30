@@ -28,14 +28,8 @@
       </div>
       <form id="payment-form">
         <input type="text" placeholder="Amount" ng-model="formData.amount">
-        <textarea placeholder="Leave a holiday wish if you'd like..."></textarea>
+        <textarea placeholder="Leave a holiday wish if you'd like..." ng-model="formData.text"></textarea>
         <button id="contribute-button" type="submit" ng-disabled="disableButton()">Contribute</button>
-      </form>
-      <form style="display:none;">
-        <input type="text" ng-model="formData.amount">
-        <input type="text" ng-model="formData.text">
-
-        <button type="submit" ng-click="createDonation()">Add</button>
       </form>
     </div>
   </body>
