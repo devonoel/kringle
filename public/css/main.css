@@ -94,6 +94,7 @@ button {
   padding: 6px 0;
   font-size: 20px;
   margin: 15px 0;
+  transition: all 0.3s;
 }
 
 button:hover {
@@ -102,4 +103,11 @@ button:hover {
 
 button:focus {
   border: 2px solid #ff9999;
+}
+
+button:disabled {
+  background-color: #f86666;
+  border: 2px solid #de4c4c;
+  color: #faa;
+  cursor: default;
 }

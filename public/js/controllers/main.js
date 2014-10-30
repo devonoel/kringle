@@ -33,6 +33,12 @@ angular.module('mainController', [])
       };
     };
 
+    $scope.disableButton = function() {
+      // Diable the button if amount is not defined or is not a number
+      var amountInvalid = !$scope.formData.amount || !$.isNumeric($scope.formData.amount)
+      return amountInvalid ? true : false
+    };
+
     $scope.getWishes = function() {
       MainSrvc.getWishes();
     };
