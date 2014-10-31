@@ -1,18 +1,27 @@
-# Christmas Donations
+# Kringle
 
 Let's make some Christmas donations!
 
-## Running the app
+## Installation
 
-+ Make sure you have ```npm``` installed
-+ Install backend dependencies: ```npm install```
-+ Install frontend dependencies: ```bower install```
-+ Start the server: ```npm start```
-+ Go to ```localhost:8080``` in your browser
+Make sure you have [npm](https://www.npmjs.org/) installed, then:
+
+```
+$ npm install
+$ bower install
+```
+
+## Usage
+
+Start the server:
+```
+$ npm start
+```
+Then go to ```localhost:5000``` in your browser
 
 ## Testing
 
-Tests are written in Mocha+Chai.  To run all tests:
+Tests are written in Mocha.  To run all tests:
 ```
-npm test
+$ npm test
 ```
