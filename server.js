@@ -23,6 +23,6 @@ var stripe = require('stripe')(process.env.STRIPE_SECRET);
 require('./app/routes.js')(app);
 
 // start server ============================================
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 5000;
 app.listen(port);
 console.log("Magic happens on port " + port);

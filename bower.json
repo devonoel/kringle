@@ -1,6 +1,6 @@
 {
-	"name"					: "christmas",
-	"version"				: "0.0.0",
+	"name"					: "kringle",
+	"version"				: "0.1.0",
 	"dependencies"	: {
 		"font-awesome"	: "latest",
 		"jquery"				: "latest",

@@ -1,7 +1,7 @@
 {
-  "name"         : "christmas",
-  "version"      : "0.0.0",
-  "description"  : "Christmas donations! Fuck cancer!",
+  "name"         : "kringle",
+  "version"      : "0.1.0",
+  "description"  : "Christmas donations!",
   "main"         : "server.js",
   "author"       : "DevoNoel",
   "dependencies" : {

@@ -1,1 +1,1 @@
-angular.module('christmas', ['mainService', 'mainController']);
+angular.module('kringle', ['mainService', 'mainController']);
