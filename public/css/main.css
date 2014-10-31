@@ -22,7 +22,7 @@ body {
           box-sizing: border-box;
 }
 
-.container {
+.donation-section {
   position: relative;
   width: 750px;
   margin: 70px auto;
@@ -36,10 +36,16 @@ body {
 h1 {
   font-family: 'Lobster Two', cursive;
   padding: 30px;
-  font-size: 48px;
+  font-size: 52px;
 }
 
 h2 {
+  font-family: 'Lobster Two', cursive;
+  line-height: 1.5em;
+  font-size: 34px;
+}
+
+h3 {
   line-height: 1.5em;
   font-size: 22px;
 }
@@ -110,4 +116,29 @@ button:disabled {
   border: 2px solid #de4c4c;
   color: #faa;
   cursor: default;
+}
+
+.wishes-section {
+  padding: 50px;
+  background-color: #f86666;
+}
+
+.inner-section {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  margin: 20px 0;
+  padding: 10px;
+  list-style: none;
+}
+
+li {
+  padding: 25px;
+  margin: -2px 0;
+  border: 2px solid #de4c4c;
+  border-radius: 4px;
 }

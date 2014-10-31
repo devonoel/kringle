@@ -19,18 +19,33 @@
 
   <body>
     <div class="container" ng-controller="MainCtrl">
-      <img src="images/christmas.png" alt="Christmas Logo">
-      <h1>Merry Christmas!</h1>
-      <div class="cta">
-        <h2>In the spirit of the holiday, let's show our support for those
-            battling cancer and their families by making a donation to the
-            Northern Cancer Research Foundation.</h2>
+      <div class="donation-section">
+        <img src="images/christmas.png" alt="Christmas Logo">
+        <h1>Merry Christmas!</h1>
+        <div class="cta">
+          <h3>In the spirit of the holiday, let's show our support for those
+              battling cancer and their families by making a donation to the
+              Northern Cancer Research Foundation.</h3>
+        </div>
+        <form id="payment-form">
+          <input type="text" placeholder="Amount" ng-model="formData.amount">
+          <textarea placeholder="Leave a holiday wish if you'd like..." ng-model="formData.text"></textarea>
+          <button id="contribute-button" type="submit" ng-disabled="disableButton()">Contribute</button>
+        </form>
       </div>
-      <form id="payment-form">
-        <input type="text" placeholder="Amount" ng-model="formData.amount">
-        <textarea placeholder="Leave a holiday wish if you'd like..." ng-model="formData.text"></textarea>
-        <button id="contribute-button" type="submit" ng-disabled="disableButton()">Contribute</button>
-      </form>
+
+      <div class="wishes-section" ng-show="true">
+        <div class="inner-section">
+          <h2>Holiday Wishes</h2>
+          <ul class="wishes-list">
+            <li class="wish-item">Hope you like your presents!</li>
+            <li class="wish-item">Hope you like your presents!</li>
+            <li class="wish-item">Hope you like your presents!</li>
+            <li class="wish-item">Hope you like your presents!</li>
+            <li class="wish-item">This is a really long message that someone crazy like my aunt or Jesus might write.  One time I ate a purple monkey dishwashed with a cherry on top.  OMG, I am like so faaatttt BECKY!  When you gaze long into the abyss the abyss gazes back into you (I'm probably fucking up this quote badly).</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
