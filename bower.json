@@ -2,8 +2,7 @@
 	"name"					: "kringle",
 	"version"				: "0.1.0",
 	"dependencies"	: {
-		"font-awesome"	: "latest",
-		"jquery"				: "latest",
-		"angular" 			: "latest"
+		"jquery"				: "2.1.x",
+		"angular" 			: "1.3.x"
 	}
 }
