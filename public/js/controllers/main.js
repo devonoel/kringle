@@ -10,7 +10,7 @@ angular.module('mainController', [])
 			});
 
     var handler = StripeCheckout.configure({
-      key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+      key: 'pk_test_VLW5oVN0kiYnoYtlcjPQe8WF',
       image: 'images/christmas-reverse.png',
       token: function(token) {
         // Use the token to create the charge with a server-side script.
