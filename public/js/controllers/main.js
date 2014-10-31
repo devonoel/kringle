@@ -1,6 +1,13 @@
 angular.module('mainController', [])
   .controller('MainCtrl', ['MainSrvc', '$scope', '$http', function(MainSrvc, $scope, $http) {
     $scope.formData = {};
+    $scope.wishes = [];
+
+    // Get the wish list on page load
+    MainSrvc.getWishes()
+      .success(function(data) {
+				$scope.wishes = data;
+			});
 
     var handler = StripeCheckout.configure({
       key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
@@ -38,19 +45,23 @@ angular.module('mainController', [])
           .success(function() {
             console.log('Wish added');
             $scope.formData = {};
+            $scope.getWishes();
           });
       } else {
         $scope.formData = {};
       };
     }
 
-    $scope.disableButton = function() {
-      // Diable the button if amount is not defined or is not a number
-      var amountInvalid = !$scope.formData.amount || !$.isNumeric($scope.formData.amount)
-      return amountInvalid ? true : false
+    $scope.getWishes = function() {
+      MainSrvc.getWishes()
+        .success(function(data) {
+          $scope.wishes = data;
+        });
     }
 
-    $scope.getWishes = function() {
-      MainSrvc.getWishes();
+    $scope.disableButton = function() {
+      // Disable the button if amount is not defined or is not a number
+      var amountInvalid = !$scope.formData.amount || !$.isNumeric($scope.formData.amount);
+      return amountInvalid ? true : false;
     }
   }]);

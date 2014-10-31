@@ -34,15 +34,11 @@
         </form>
       </div>
 
-      <div class="wishes-section" ng-show="true">
+      <div class="wishes-section" ng-show="wishes.length">
         <div class="inner-section">
           <h2>Holiday Wishes</h2>
           <ul class="wishes-list">
-            <li class="wish-item">Hope you like your presents!</li>
-            <li class="wish-item">Hope you like your presents!</li>
-            <li class="wish-item">Hope you like your presents!</li>
-            <li class="wish-item">Hope you like your presents!</li>
-            <li class="wish-item">This is a really long message that someone crazy like my aunt or Jesus might write.  One time I ate a purple monkey dishwashed with a cherry on top.  OMG, I am like so faaatttt BECKY!  When you gaze long into the abyss the abyss gazes back into you (I'm probably fucking up this quote badly).</li>
+            <li ng-repeat="wish in wishes">{{wish.text}}</li>
           </ul>
         </div>
       </div>
